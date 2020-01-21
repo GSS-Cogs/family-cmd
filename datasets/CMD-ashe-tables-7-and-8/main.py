@@ -19,6 +19,7 @@ df[:10]
 tidy_data = pd.DataFrame()
 
 tidy_data["Value"] = df["V4_2"]
+tidy_data[""]
 tidy_data["Year"] = df["time"]
 tidy_data["Geography"] = df["admin-geography"]
 tidy_data["ashe statistics"] = df["ashe-statistics"]
