@@ -35,7 +35,7 @@ tidy_data["ashe working pattern"] = df["ashe-working-pattern"]
 tidy_data["ashe hours and earnings"] = df["ashe-hours-and-earnings"]
 tidy_data["ashe workplace or residence"] = df["ashe-workplace-or-residence"]
 tidy_data["Measure Type"] = tidy_data["ashe hours and earnings"].apply(MeasureTypeFunction)
-tidy_data['Marker'] = tidy_data['Marker'].fillna('not-applicable')
+tidy_data['Marker'] = tidy_data['Marker'].fillna('no-value')
 
 tidy_data[:10]
 
