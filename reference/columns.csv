@@ -1,6 +1,6 @@
 title,name,component_attachment,property_template,value_template,datatype,value_transformation,regex,range
 Value,value,,http://gss-data.org.uk/def/measure/{measure_type},,number,,,
-Marker,marker,qb:attribute,http://purl.org/linked-data/sdmx/2009/attribute#obsStatus,http://gss-data.org.uk/def/concept/marker/{marker},string,,,http://gss-data.org.uk/def/classes/marker/marker
+Marker,marker,qb:attribute,http://purl.org/linked-data/sdmx/2009/attribute#obsStatus,http://gss-data.org.uk/def/concept/marker/{marker},string,,,
 CV,cv,qb:attribute,http://gss-data.org.uk/def/attribute/cv,,string,,,
 Measure Type,measure_type,qb:dimension,http://purl.org/linked-data/cube#measureType,http://gss-data.org.uk/def/measure/{measure_type},string,slugize,,
 Paid hours worked,paid_hours_worked,qb:measure,http://gss-data.org.uk/def/measure/paid-hours-worked,,string,,,
