@@ -9,5 +9,5 @@ Geography,geography,qb:dimension,http://purl.org/linked-data/sdmx/2009/dimension
 Value,value,,http://gss-data.org.uk/def/measure/{measure_type},,number,,,
 Marker,marker,qb:attribute,http://purl.org/linked-data/sdmx/2009/attribute#obsStatus,http://gss-data.org.uk/def/concept/marker/{marker},string,,,http://gss-data.org.uk/def/classes/gp-practice/marker
 Measure Type,measure_type,qb:dimension,http://purl.org/linked-data/cube#measureType,http://gss-data.org.uk/def/measure/{measure_type},string,slugize,,qb:MeasureProperty
-CV,cv,qb:attribute,http://gss-data.org.uk/def/attribute/cv,,number,,,
+CV,cv,qb:attribute,http://gss-data.org.uk/def/attribute/cv,,string,,,
 Marker,marker,qb:attribute,http://purl.org/linked-data/sdmx/2009/attribute#obsStatus,http://gss-data.org.uk/def/concept/marker/{marker},string,,,http://gss-data.org.uk/def/classes/marker/marker
