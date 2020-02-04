@@ -39,9 +39,6 @@ tidy_data['cmd marker'] = tidy_data['cmd marker'].fillna('no-value')
 
 tidy_data[:10]
 
-# testing using the first 100 rows
-tidy_data = tidy_data.head(100)
-
 
 # +
 
