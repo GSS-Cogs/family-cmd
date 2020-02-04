@@ -36,6 +36,7 @@ tidy_data["ashe hours and earnings"] = df["ashe-hours-and-earnings"]
 tidy_data["ashe workplace or residence"] = df["ashe-workplace-or-residence"]
 tidy_data["Measure Type"] = tidy_data["ashe hours and earnings"].apply(MeasureTypeFunction)
 tidy_data['cmd marker'] = tidy_data['cmd marker'].fillna('no-value')
+tidy_data = tidy_data[tidy_data['Geography'] != 'not-classified'] # not-classified included in dataset but not an ONS code
 
 tidy_data[:10]
 
