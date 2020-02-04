@@ -25,7 +25,7 @@ def MeasureTypeFunction(value):
 tidy_data = pd.DataFrame()
 
 tidy_data["Value"] = df["V4_2"]
-tidy_data["Marker"] = df["Data Marking"]
+tidy_data["cmd marker"] = df["Data Marking"]
 tidy_data["CV"] = df["CV"]
 tidy_data["Year"] = df["time"]
 tidy_data["Geography"] = df["admin-geography"]
@@ -35,7 +35,7 @@ tidy_data["ashe working pattern"] = df["ashe-working-pattern"]
 tidy_data["ashe hours and earnings"] = df["ashe-hours-and-earnings"]
 tidy_data["ashe workplace or residence"] = df["ashe-workplace-or-residence"]
 tidy_data["Measure Type"] = tidy_data["ashe hours and earnings"].apply(MeasureTypeFunction)
-tidy_data['Marker'] = tidy_data['Marker'].fillna('no-value')
+tidy_data['cmd marker'] = tidy_data['cmd marker'].fillna('no-value')
 
 tidy_data[:10]
 
