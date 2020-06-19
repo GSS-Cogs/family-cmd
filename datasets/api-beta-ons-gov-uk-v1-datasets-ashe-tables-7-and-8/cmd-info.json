@@ -1,1 +1,0 @@
-{"https://api.beta.ons.gov.uk/v1/datasets/ashe-tables-7-and-8": {"attributes to add": {"Measure Type": {"GBP": {"ashe-hours-and-earnings": "pay"}, "Count": {"ashe-hours-and-earnings": "paid"}}, "Unit Multiplier": 1}, "family": "trade", "existing attributes": ["Data Marking", "CV"]}}

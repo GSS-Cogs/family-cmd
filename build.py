@@ -1,8 +1,11 @@
-from gssutils import *
-from attributes import Attributes
 import json
+
+from gssutils import *
 from pathlib import Path
-from referenceGenerator import generate_reference_data
+
+from assets.attributes import Attributes
+from assets.referenceGenerator import generate_reference_data
+
 with open("data.json", "r") as f:
     data_dict = json.load(f)
     
@@ -17,13 +20,13 @@ for url, arguments in data_dict.items():
         json.dump(data_dict, f)
         
     pipeline_path = Path(outputFolder / 'main.py')
-    with open("pipeline-template.txt", "r") as f1:
+    with open("./assets/pipeline-template.txt", "r") as f1:
         with open(pipeline_path, "w") as f2:
             f2.write(f1.read())
     
     # TODO move attributes into gssutils
     pipeline_path = Path(outputFolder / 'attributes.py')
-    with open("attributes.py", "r") as f1:
+    with open("./assets/attributes.py", "r") as f1:
         with open(pipeline_path, "w") as f2:
             f2.write(f1.read())
             
