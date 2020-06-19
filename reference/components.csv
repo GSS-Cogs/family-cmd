@@ -1,8 +1,13 @@
 Label,Description,Component Type,Codelist
-ashe statistics,,Dimension,http://gss-data.org.uk/def/concept-scheme/ashe-statistics
-ashe sex,,Dimension,http://gss-data.org.uk/def/concept-scheme/ashe-sex
-ashe working pattern,,Dimension,http://gss-data.org.uk/def/concept-scheme/ashe-working-pattern
-ashe hours and earnings,,Dimension,http://gss-data.org.uk/def/concept-scheme/ashe-hours-and-earnings
-ashe workplace or residence,,Dimension,http://gss-data.org.uk/def/concept-scheme/ashe-workplace-or-residence
-Paid hours worked,,Measure,
-Pay GBP,,Measure,
+GBP,,Measure,
+Count,,Measure,
+Unit Multiplier,,Attribute,
+Data Marking,,Attribute,
+CV,,Attribute,
+cmd calendar years,,Dimension,http://gss-data.org.uk/def/concept-scheme/cmd calendar-years
+cmd admin geography,,Dimension,http://gss-data.org.uk/def/concept-scheme/cmd admin-geography
+cmd ashe statistics,,Dimension,http://gss-data.org.uk/def/concept-scheme/cmd ashe-statistics
+cmd ashe sex,,Dimension,http://gss-data.org.uk/def/concept-scheme/cmd ashe-sex
+cmd ashe working pattern,,Dimension,http://gss-data.org.uk/def/concept-scheme/cmd ashe-working-pattern
+cmd ashe hours and earnings,,Dimension,http://gss-data.org.uk/def/concept-scheme/cmd ashe-hours-and-earnings
+cmd ashe workplace or residence,,Dimension,http://gss-data.org.uk/def/concept-scheme/cmd ashe-workplace-or-residence
