@@ -30,4 +30,10 @@ for url, arguments in data_dict.items():
         with open(pipeline_path, "w") as f2:
             f2.write(f1.read())
             
+    
+    pipeline_path = Path(outputFolder / 'cmdScraper.py')
+    with open("./assets/cmdScraper.py", "r") as f1:
+        with open(pipeline_path, "w") as f2:
+            f2.write(f1.read())
+            
 generate_reference_data()

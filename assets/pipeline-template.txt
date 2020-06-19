@@ -2,9 +2,12 @@ from gssutils import *
 from attributes import Attributes
 import json
 from pathlib import Path
+from cmdScraper import CmdScrape
 
 with open("cmd-info.json", "r") as f:
     data_dict = json.load(f)
+
+scrapers.scraper_list = [('https://api.beta.ons', CmdScrape)]
 
 # TODO use next statement rather than loop
 for url, arguments in data_dict.items():
