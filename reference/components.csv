@@ -1,0 +1,11 @@
+Codelist,Component Type,Description,Label,Parent,Path,Range
+,Measure,,GBP,,measure/cmd/gbp,
+,Measure,,Count,,measure/cmd/count,
+,Attribute,,Unit Multiplier,,measure/cmd/unit-multiplier,
+,Attribute,,Data Marking,,measure/cmd/data-marking,
+,Attribute,,CV,,measure/cmd/cv,
+http://gss-data.org.uk/def/concept-scheme/ashe-statistics,Dimension,,ashe statistics,,measure/cmd/ashe-statistics,
+http://gss-data.org.uk/def/concept-scheme/ashe-sex,Dimension,,ashe sex,,measure/cmd/ashe-sex,
+http://gss-data.org.uk/def/concept-scheme/ashe-working-pattern,Dimension,,ashe working pattern,,measure/cmd/ashe-working-pattern,
+http://gss-data.org.uk/def/concept-scheme/ashe-hours-and-earnings,Dimension,,ashe hours and earnings,,measure/cmd/ashe-hours-and-earnings,
+http://gss-data.org.uk/def/concept-scheme/ashe-workplace-or-residence,Dimension,,ashe workplace or residence,,measure/cmd/ashe-workplace-or-residence,

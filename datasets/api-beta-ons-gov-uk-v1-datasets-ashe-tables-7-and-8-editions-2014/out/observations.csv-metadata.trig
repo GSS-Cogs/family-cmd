@@ -1,0 +1,36 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix gdp: <http://gss-data.org.uk/def/gdp#> .
+@prefix gov: <https://www.gov.uk/government/organisations/> .
+@prefix ns1: <graph/api/beta/ons/gov/uk/v1/datasets/ashe-tables-7-and-8/editions/2014/> .
+@prefix ns2: <urn:x-rdflib:> .
+@prefix pmd: <http://publishmydata.com/def/dataset#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix theme: <http://gss-data.org.uk/def/concept/statistics-authority-themes/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ns1:metadata {
+    <data/api/beta/ons/gov/uk/v1/datasets/ashe-tables-7-and-8/editions/2014> a pmd:Dataset,
+            pmd:LinkedDataset,
+            qb:DataSet,
+            dcat:Dataset ;
+        rdfs:label "Ashe Tables 7 And 8, 2014"@en ;
+        gdp:family gdp:trade ;
+        pmd:contactEmail <mailto:earnings@ons.gov.uk> ;
+        pmd:graph <graph/api/beta/ons/gov/uk/v1/datasets/ashe-tables-7-and-8/editions/2014> ;
+        dct:creator gov:office-for-national-statistics ;
+        dct:description "Allows you to produce customisable time series of XLS and CSV tables for key variables and measures from Annual Survey of Hours and Earnings (ASHE) Tables 7 & 8 down to local authority level."^^<https://www.w3.org/ns/iana/media-types/text/markdown#Resource> ;
+        dct:license <http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/> ;
+        dct:modified "2020-06-19T16:05:36.847255"^^xsd:dateTime ;
+        dct:publisher gov:office-for-national-statistics ;
+        dct:title "Ashe Tables 7 And 8, 2014"@en ;
+        void:sparqlEndpoint </sparql> ;
+        dcat:contactPoint <mailto:earnings@ons.gov.uk> ;
+        dcat:landingPage <https://api.beta.ons.gov.uk/v1/datasets/ashe-tables-7-and-8/editions/2014> .
+}
+
