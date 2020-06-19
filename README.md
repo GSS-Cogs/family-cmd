@@ -1,6 +1,6 @@
 # family-cmd
 
-Pipeline for PMD->CMD dataset transforamtions.
+Pipeline for CMD->PMD dataset transformations.
 
 ### Usage
 
