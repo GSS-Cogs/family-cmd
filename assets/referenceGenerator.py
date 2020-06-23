@@ -104,7 +104,7 @@ def populate_codelist_reference_csvs_from_codelist_urls(code_list_urls_from_data
         
         
 def components_csv_from_list_of_code_list_urls(code_list_urls_from_dataset, details):
-    columns=["Label", "Description", "Component Type", "Codelist"]
+    columns=["Label","Description","Component Type","Codelist","Path","Range","Parent"]
     try:
         df = pd.read_csv("reference/components.csv")
     except FileNotFoundError:
@@ -156,6 +156,7 @@ def components_csv_from_list_of_code_list_urls(code_list_urls_from_dataset, deta
     df = pd.concat([df, pd.DataFrame().from_dict(data)])
     df = df.fillna("")
     df = df.drop_duplicates()
+    df = df[columns]
     df.to_csv("reference/components.csv", index=False)
     
     
@@ -187,7 +188,7 @@ def populate_columns_csv_from_list_of_code_list_urls(code_list_urls_from_dataset
         if mtype_or_attribute == "Measure Type":
             for measure_type in instructions.keys():
                 data["title"].append("{}".format(measure_type))
-                data["name"].append("{}".format(measure_type.lower().replace("-", "-")))
+                data["name"].append("{}".format(measure_type.lower().replace("-", "_").replace(" ", "_")))
                 data["component_attachment"].append("qb:measure")
                 data["property_template"].append("")
                 data["value_template"].append("")
@@ -200,7 +201,7 @@ def populate_columns_csv_from_list_of_code_list_urls(code_list_urls_from_dataset
     attributes_to_write = attributes_to_write + details["existing attributes"]
     for attribute in attributes_to_write:
         data["title"].append("{}".format(attribute))
-        data["name"].append("{}".format(attribute.lower().replace("-", "-")))
+        data["name"].append("{}".format(attribute.lower().replace("-", "_").replace(" ", "_")))
         data["component_attachment"].append("qb:attribute")
         prop = "http://gss-data.org.uk/def/attribute/{}".format(attribute.replace(" ", "-").lower())
         data["property_template"].append(prop)
